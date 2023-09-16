@@ -41,7 +41,7 @@ def search_surname():
         return "Запись не найдена"            
 
 def search_phone():
-    phone_search = input('Введите фамилию для поиска: ')
+    phone_search = input('Введите номер телефона для поиска: ')
     with open('phone_book.txt', 'r', encoding='utf-8') as book:
         for line in book:
             if phone_search.lower() == line.strip('\n').split()[2].lower():
